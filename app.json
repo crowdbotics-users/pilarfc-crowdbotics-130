@@ -1,0 +1,16 @@
+
+{
+  "name": "pilarfc-crowdbotics-130",
+  "description": "This is repository for web app developed with django  and with features thirtyone",
+  "repository": "https://github.com/crowdbotics-users/pilarfc-crowdbotics-130",
+  "keywords": ['web', 'thirtyone'],
+  "env": {
+    "DEBUG_COLLECTSTATIC": "1" 
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate --noinput"
+  }
+}
